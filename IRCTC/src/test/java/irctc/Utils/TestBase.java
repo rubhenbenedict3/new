@@ -22,7 +22,7 @@ public class TestBase {
 	
 	@BeforeSuite
 	public void open_browser () {
-		System.setProperty("webdriver.chrome.driver", "/Users/rubhenbenedict/Documents/selinium/chromedriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "D:\\Chrome\\chromedriver.exe");
 		driver = new ChromeDriver ();
 		//WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -30,7 +30,7 @@ public class TestBase {
 		
 		
 	}
-@AfterSuite (enabled=false)
+@AfterSuite (enabled=true)
 public void close_browser () {
 	driver.quit();
 	
